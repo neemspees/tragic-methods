@@ -1,37 +1,42 @@
 # Contributing to Tragic Methods
 
-## Pull Requests
+## Pull requests
 
-To start contributing, create a fork of this repo and when you have a working example
-you can create a pull request for the main branch.
+To start contributing, create a fork of this repo. When you have a working example you can create a pull request for the main branch.
 
-## Where to place your scripts
+## Naming your quirk
 
-There is a directory for programming each language in the root of this project.
-If there is no directory for you programming language, feel free to create one.
+Name your quirk as narrow as possible to avoid collisions with other possible quirk names.
 
-Every script should be placed in its own subdirectory. If you're going to create a script
-called foo-bar.js you should place it under `/js/foo-bar/foo-bar.js`.
+```diff
+-- array-addition
+++ array-addition-results-in-empty-string
+```
 
-So the structure should be as follows
+## Where to place your quirk
+
+There is a directory for each language in the root of this project. If there is no directory for you programming language, feel free to create one.
+
+Every quirk should be placed in its own subdirectory. If you're going to create a `js` quirk called `foo-bar` with a script called `example.js` you should place your script under `/js/foo-bar/example.js`.
+
+So the structure should be as follows:
 
 ```bash
 .
 ├── js
-│   ├── example-quirk
+│   ├── foo-bar
 │   │   ├── README.md
-│   │   ├── your-script-part1.js
-│   │   └── your-script-part2.js
+│   │   └── example.js
 │   └── ...
 └── ...
 ```
 
-## Document your scripts
+## Document your quirk
 
 Because we want to make people aware of the language quirks used in these examples
-we require scripts to be document in a `README.md` file that resides in the same directory
-as the script.
+we require them to be document in a `README.md` file that resides in the same directory
+as the scripts.
 
 Be sure to add a title to your readme.
 
-Scripts without documentation will not be accepted.
+> :warning: Scripts without documentation will not be accepted.
