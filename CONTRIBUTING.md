@@ -29,5 +29,9 @@ So the structure should be as follows
 ## Document your scripts
 
 Because we want to make people aware of the language quirks used in these examples
-we require scripts to be document in a README.md file that resides in the same directory
-as the script. Scripts without documentation will not be accepted.
+we require scripts to be document in a `README.md` file that resides in the same directory
+as the script.
+
+Be sure to add a title to your readme.
+
+Scripts without documentation will not be accepted.
