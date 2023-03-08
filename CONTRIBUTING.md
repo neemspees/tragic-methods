@@ -20,8 +20,8 @@ So the structure should be as follows
 ├── js
 │   ├── example-quirk
 │   │   ├── README.md
-│   │   ├── your-script-part2.js
-│   │   └── your-script-part1.js
+│   │   ├── your-script-part1.js
+│   │   └── your-script-part2.js
 │   └── ...
 └── ...
 ```
