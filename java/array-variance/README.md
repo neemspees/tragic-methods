@@ -1,3 +1,5 @@
+# Array variance
+
 Java arrays are covariant, meaning that `A[]` is a subclass of `B[]`
 if `A` is a subclass of `B`. This is unsound: You can insert objects
 of type `B` into a `B[]`, but not into an `A[]`. Because of this,
