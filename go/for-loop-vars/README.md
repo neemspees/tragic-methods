@@ -1,3 +1,5 @@
+# For loop vars
+
 When you use a for loop in Go, only the value of the variables used in the iteration is updated - the address in memory stays the same. This can lead to some gotchas.
 
 In the first example, I initialized an integer slice with a few numbers. In the second slice, I want to store pointers to each of the vars in the first slice. The instinctive way to go about it would be to iterate over it using range, and appending to the 2nd slice the address of the 2nd variable defined in the for loop. Doing so results in the following behavior:
