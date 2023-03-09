@@ -1,9 +1,8 @@
 # Initialize attributes from function
 Using functions as default parameters for class constructors will cause them to only be executed once during initialization.
 
-## Language
+## Tested using
 Version Python 3.10.7
-
 
 ## Explanation
 Looking at the code in `initialize-attributes-from-function.py` one might expect that the two demo objects would get different random IDs, but they don't.
