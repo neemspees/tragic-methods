@@ -1,5 +1,7 @@
 <h1 align="center"><b>Schrodinger's regex</b></h1>
 
+> Tested using NodeJS v18.13.0<br>But this should function in [all modern javascript engines](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/lastIndex#browser_compatibility).
+
 Regular expressions in javascript can be funky.<br>Let's look at an example.
 
 ---
