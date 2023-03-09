@@ -42,7 +42,6 @@ class TimestampFunctionCaller {
 
         for ($i = 0; $i < $count; $i++) {
             $functionName++;
-            $functionName = (string) $functionName;
         }
 
         return $functionName();
