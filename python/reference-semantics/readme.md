@@ -9,7 +9,7 @@ In Python, the `is` operator checks if two objects are the same object in memory
 
 However, when we append the value `4` to the list `a`, it modifies the list in place. Since `b` is pointing to the same object in memory as `a`, the value of `b` is also modified. When we check `a is b` again, it still returns `True`, even though the objects are no longer the same.
 
-This behavior can lead to unexpected bugs in code that relies on the `is` operator to compare objects. To compare the values of two objects in Python, it's better to use the `==` operator.
+This behavior can lead to unexpected bugs in code that relies on the `is` or `==` operator to compare objects.
 
 ## Example:
 
