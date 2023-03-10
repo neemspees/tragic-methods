@@ -11,4 +11,6 @@ In the first example, the value "mommy" is present in the `$values` array, so `i
 
 In the second example, the value 0 is used as the search parameter in `the in_array()` function. PHP has a type juggling feature that converts "mommy", "daddy", "stepsister", and "big brother" into integers when compared to the integer value 0. Since all of these strings are not numeric, they are converted to 0. Therefore, 0 is present in the `$values` array, so `in_array(0, $values)` returns true.
 
-It's important to note that using loose comparison operators like == can lead to unexpected behavior when comparing strings and integers. In this case, it's better to use the strict comparison operator === to compare both the value and the type of the variables being compared.
+In the third example, third parameter of [`in_array()`](https://www.php.net/manual/en/function.in-array.php) function is used to enforce strict comparison (`===`) and solve the problem from example 2.
+
+It's important to note that using loose comparison operators like `==` can lead to unexpected behavior when comparing strings and integers. In this case, it's better to use the strict comparison operator `===` to compare both the value and the type of the variables being compared (like in example 3).
