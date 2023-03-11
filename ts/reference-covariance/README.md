@@ -2,6 +2,10 @@
 
 An array of a subtype can be assigned to an array of its supertype, this seems logical at first glance because every subtype is compatible with its supertype.
 
+## Tested using
+Version: TypeScript 4.9.5
+
+## Explanation
 
 ```typescript
 const circles: Circle[] = [];
@@ -30,4 +34,21 @@ const squareDisguisedAsCircle = disguiseAsCircle(square);
 console.log(squareDisguisedAsCircle);
 
 // > { "name": "square of length 10", "length": 10 }
+```
+
+This is not restricted to arrays, take for example a generic interface. This would still compile:
+
+```typescript
+interface Reference<T> {
+    value?: T;
+}
+
+function disguiseAsCircle(square: Square): Circle|undefined {
+    const circleRef: Reference<Circle> = {};
+    const shapeRef: Reference<Shape> = circleRef; // Problematic
+
+    shapeRef.value = square;
+
+    return circleRef.value;
+}
 ```
