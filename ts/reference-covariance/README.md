@@ -1,6 +1,6 @@
-# Array reference covariance
+# Reference covariance
 
-An array of a subtype can be assigned to an array of its supertype, this seems logical at first glance because every subtype is compatible with its supertype.
+A reference of a subtype can be assigned to a reference of its supertype, this seems logical at first glance because every subtype is compatible with its supertype.
 
 ## Tested using
 Version: TypeScript 4.9.5
