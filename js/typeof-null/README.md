@@ -47,7 +47,7 @@ getDescription({ description: "New product" });
 getDescription("hello");
 // Returns `undefined`
 
-getDescriptionProperty(null);
+getDescription(null);
 // Uncaught TypeError: Cannot read properties of null (reading 'hasOwnProperty')
 ```
 
