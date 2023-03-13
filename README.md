@@ -1,3 +1,5 @@
+![banner](./banner.jpg)
+
 # Tragic Methods
 A collection of scripts depicting the strange quirks of programming languages.
 
