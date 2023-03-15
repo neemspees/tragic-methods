@@ -12,7 +12,7 @@ Consider the following string:
 $casted = (int) "test"; // 0
 ```
 
-PHP casts this into an integer with the value 0. I think this is weird in my opinion, but at least we know that it will be 0 every time ... right?
+PHP casts this into an integer with the value 0. I think this is weird in my opinion, but at least we know that string to integer casts will be 0 every time ... right?
 
 Well let's take the following example
 ```php
