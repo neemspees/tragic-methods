@@ -1,5 +1,7 @@
 # Tri-State Maps
 
+Java version: Tested with 1.19
+
 Java divides values into primitives and objects. The former are incompatible with
 generics. As a result, primitives have to be boxed, that is wrapped in an object.
 For convenience Java does this automatically. For example, in `Map.of("foo", 42)`,
