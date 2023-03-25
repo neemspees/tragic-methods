@@ -1,6 +1,6 @@
 # I want a list of ten functions, returning 0 through 9, but this won't do it.
 
-funcs = [lambda: i for i in range(10)]
+funcs = [(lambda: i) for i in range(10)]
 print([f() for f in funcs])
 
 # Prints [9, 9, 9, 9, 9, 9, 9, 9, 9, 9].  Oops.
