@@ -1,4 +1,5 @@
 # Unsafe Fat Pointers
+Go version: All, tested with 1.20
 
 Most operations in Go are memory safe. The `unsafe` package
 contains those that are not. There is however a surprising exeption
