@@ -33,4 +33,4 @@ The correct way to do this would be to create a copy before passing it to the ap
     5 0xc000134028
 
 This is a known issue. See discussion about it [here.](https://github.com/golang/go/discussions/56010)
-Last tested with Go 1.19.3 and still manifesting.
+Affects Go versions prior to 1.22
