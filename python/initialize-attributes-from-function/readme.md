@@ -14,17 +14,26 @@ Python will evaluate the function and assign it as the default value for the fun
 1. Replace the `id` default value with the function name instead of the function call. This way, the function instead of it's evaluation is the default. The function will evaluate on each instatiation, and a different ID will be derived.
 ```python
 class Demo:
-	"""A class representing a demo object with an ID"""
-	def __init__(self, id = generate_id):
-		"""Instantiate the demo object with the ID from the 'id' parameter."""
-		self.id = id(6)
+    """A class representing a demo object with an ID"""
+    def __init__(self, id = generate_id):
+        """Instantiate the demo object with the ID from the 'id' parameter."""
+        self.id = id(6)
 ```
 2. Higher order object. Working on the previous idea, we can set up the initializtion method to take any function we would like.
 ```python
 class Demo:
-	"""A class representing a demo object with an ID"""
-	def __init__(self, id_func = generate_id, id_args = [6]):
-		"""Instantiate the demo object with the ID from the 'id' parameter."""
-		self.id = id_func(*id_args)
+    """A class representing a demo object with an ID"""
+    def __init__(self, id_func = generate_id, id_args = [6]):
+        """Instantiate the demo object with the ID from the 'id' parameter."""
+        self.id = id_func(*id_args)
+```
+3. Another idiomatic way of addressing this issue is to use None as a default argument
+```python
+class Demo:
+    """A class representing a demo object with a default value as None"""
+    def __init__(self, id_func = None):
+        if not id_func:
+            id_func = generate_id
+        self.id = id_func()
 ```
 In either of these cases, we can avoid unwanted behaviour by being careful to not set the default of `id` to be whatever a function evaluates on the first instatiation.
